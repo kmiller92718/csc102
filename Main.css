@@ -1,0 +1,72 @@
+
+body{
+    /*Set the background color of body*/
+    background-color: rgb(1, 1, 81);
+    color: rgb(199, 199, 199);
+    /* creates the border and the details */
+    border-style: groove;
+    border-width: thick;
+    border-color: crimson;  
+}
+
+nav{
+    /* lays out the way the Nav area will look when created */
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    /* aligns the img in this case to the center */
+    text-align: center;
+    /* moves the footer block 500px from the left edge */
+    margin-left: 500px;
+    /* sets footer block height to 30px and the width to 150px */
+    height: 30px;
+    width: 150px;
+    /* footer background color */
+    background-color: rgb(47, 46, 46);
+   
+}
+
+ #memeImage{ 
+    /* sizes the img */
+    width: 400px;
+    /* used to center img */
+    margin-left: 325px;    
+}
+
+h1{
+    /* centers text in the h1 block */
+    text-align: center;
+    /* font is italic */
+    font-style: italic;
+    /* sets font to cursive */
+    font-family: cursive;
+    /* sets fint size to 40px */
+    font-size: 40px;
+    /* creates the shadow affect size and color */
+    text-shadow: 5px 5px rgb(84, 26, 26);
+}
+
+p{
+    /* used to align text to the left */
+    text-align: left;
+    /* moves text 100px in from the left */
+    margin-left: 100px;
+    /* sets font to Lucida Sans */
+    font-family: 'Lucida Sans';    
+}
+
+
+/* img used in the footer */
+#KMK{
+    /* sets size if img */
+    width: 100px;
+    height: 30px;
+    /* centers img in the footer block */
+    align-content: center;
+}
+
