@@ -1,3 +1,4 @@
+//Keith Millrt, 10 Apr 2025 
 // function that contains the JS for the game LowHigh
 function lowHigh() {
   // getElementById stores the outcome of the game in results
