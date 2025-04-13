@@ -1,9 +1,7 @@
-//Keith Millrt, 10 Apr 2025 
+//Keith Miller, 10 Apr 2025 
 // function that contains the JS for the game LowHigh
 function lowHigh() {
-  // getElementById stores the outcome of the game in results
-   let results = document.getElementById("game")
-  //  list of varibles that generate random numbers 1 - 6
+    //  list of varibles that generate random numbers 1 - 6
     var die1 = Math.floor(Math.random()*6)+1;
     var die2 = Math.floor(Math.random()*6)+1;
     var die3 = Math.floor(Math.random()*6)+1;
@@ -23,9 +21,9 @@ function lowHigh() {
     console.log("Player = " +playerTotal);
     // conditional if/eles statement compares if compTotal is greater than playerTotal. Returns You Lose if true and You Win if false 
     if (compTotal > playerTotal){
-      results.innerHTML="You Lose";
+      document.getElementById("game").innerHTML="You Lose"
     } else {
-      results.innerHTML="You Win";
+      document.getElementById("game").innerHTML="You Win"
     }
 
     
