@@ -46,6 +46,57 @@ function tryAgain(){
     document.getElementById("nextWord").innerHTML = "Enter New Word"
 }
 
+function userInfoVerify(){
+
+    let firstNameField = document.getElementById("firstName");
+
+    let lastNameField = document.getElementById("lastName");
+
+    let zipCodeField = document.getElementById("zipCode");
+
+    let firstNameValue = firstNameField.value;
+
+    let lastNameValue = lastNameField.value;
+
+    let zipCodeValue = zipCodeField.value;
+
+    let results = document.getElementById("userInfoResults");
+
+    results.innerHTML = "";
+
+    let zipNumber = zipCodeValue.replace(/[^0-9]/g, "");
+
+    let fullName = firstNameValue + " " + lastNameValue;
+
+    console.log(fullName);
+
+    console.log(zipCodeValue);
+
+    console.log(zipNumber);
+
+    if (fullName.length > 20) {
+        results.innerHTML = "Entered to many Characters."
+
+        return;
+    }
+    
+
+    if (zipCodeValue.length !== 5){
+        results.innerHTML = "Invalid Zip Code!"
+        return;
+    }
+
+    if (zipNumber.length !== 5){
+        results.innerHTML = "Invalid Zip Code!"
+
+        return;
+    }
+
+    results.innerHTML = fullName + '<br>' + "You have been verified."
+
+    console.log("Input Validated!");
+}
+
 
 
 
