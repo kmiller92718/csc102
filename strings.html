@@ -1,0 +1,72 @@
+<!-- Keith Miller 12 Apr 2025 -->
+ <!-- DOCTYPE this is the first tag on yhe page and it tells the browser that it is an HTML5 page -->
+<!DOCTYPE html>
+<!-- the HTML tag goes next -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links the css file to set the display -->
+    <link rel = "stylesheet" href = "strings.css">
+    <!-- links the js file -->
+    <script src="string.js"></script>
+    <!-- Title tage is displayed on the tab of the window -->
+    <title>Palindromes Checker</title>
+</head>
+<body>
+    <!-- <h> tags can be used as a title of different parts of the page -->
+    <h1>Looking for Palindromes</h1>
+    
+
+    <p id = "nextWord">
+        <!-- form for user to input their word unable to stop form from refreshing-->
+       <form id = formId>
+            <label id = "first"> Enter Word:
+                <br>  
+            <input id = "myWord" type="text"><br><br>  
+                  <!--When clicked activates check() (runs the palindrome check) and removeDisabled() (enables the yes and no options to try again)  -->
+            <button type = "submit" onclick="return check(), removeDisabled()">Submit</button>
+        </label>
+       </form>
+       
+        
+        
+    </p>
+    <!-- paragraph displays the user word reversed-->
+    <p id = "reverse"></p>
+    <!-- Were the results of check are displayed -->
+    <p id = "result"></p>
+    <!-- Asking user if they want to try another word or not -->
+    <p id = "question"></p>
+
+            <!-- creates the otptions of yes or no -->
+            <input id="yes" type = "radio" disabled onclick="tryAgain()" value="yes">
+            <label for="yes">Yes</label>
+            <br>
+            <input id="no" type ="radio" disabled onclick="quit()" value="no">
+            <label for="no">No</label>                       
+       
+    </p>
+
+    <!-- <p id="userVerification"> 
+        <label for="firstName">First Name:</label>
+        <br>
+        <input id="firstName" type="text">
+        <br>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <br>
+        <input id="lastName" type="text">
+        <br>
+        <br>
+        <label for="zipCode">Zip Code:</label>
+        <br>
+        <input id = "zipCode" type = "text">
+        <br>
+    -->
+
+    </p>
+   
+   
+</body>
+</html>
