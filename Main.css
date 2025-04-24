@@ -1,21 +1,22 @@
 
 body{
     /*Set the background color of body*/
-    background-color: rgb(1, 1, 81);
+    background-color: rgb(67, 67, 70);
     color: rgb(199, 199, 199);
     /* creates the border and the details */
     border-style: groove;
     border-width: thick;
     border-color: crimson;  
+    height: 1000px;
 }
 
-nav{
+ nav{
     /* lays out the way the Nav area will look when created */
-    height: 600px;
-    width: 200px;
-    float: left;
-    padding: 5px;
-    line-height: 30px;
+    /* height: 600px; */
+    /* width: 200px; */
+    /* float: left; */
+    /* padding: 5px; */
+    /* line-height: 30px; */
 }
 
 footer{
@@ -33,31 +34,32 @@ footer{
 
  #memeImage{ 
     /* sizes the img */
-    width: 400px;
-    /* used to center img */
-    margin-left: 325px;    
+    width: 178px;
+    height: 178px;
+    position: relative;
+   
 }
 
 h1{
     /* centers text in the h1 block */
     text-align: center;
-    /* font is italic */
+   /* font is italic */
     font-style: italic;
     /* sets font to cursive */
     font-family: cursive;
     /* sets fint size to 40px */
     font-size: 40px;
     /* creates the shadow affect size and color */
-    text-shadow: 5px 5px rgb(84, 26, 26);
+    text-shadow: 5px 5px rgb(41, 14, 14);
 }
 
 p{
     /* used to align text to the left */
-    text-align: left;
+    text-align: left; 
     /* moves text 100px in from the left */
-    margin-left: 100px;
+    margin-left: 100px; 
     /* sets font to Lucida Sans */
-    font-family: 'Lucida Sans';    
+    font-family: 'Lucida Sans';  
 }
 
 
@@ -69,4 +71,6 @@ p{
     /* centers img in the footer block */
     align-content: center;
 }
+
+
 

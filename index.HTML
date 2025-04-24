@@ -1,4 +1,4 @@
-<!--Keith Millrt, 1 Apr 2025--> 
+<!--Keith Millrt, 23 Apr 2025--> 
 <!-- DOCTYPE this is the first tag on yhe page and it tells the browser that it is an HTML5 page -->
 <!DOCTYPE html>
 <!-- the HTML tag goes next -->
@@ -8,6 +8,7 @@
      <title>index</title>
      <!-- add link to our css file -->
       <link rel="stylesheet" href="Main.css">
+      <script src="index.js"></script>
 </head>
 
 <!-- the body section holds the texts and images that we want to show the the user -->
@@ -20,6 +21,14 @@
         <!-- img is the image tage -->
         <img id= "memeImage"
         src="person-watching-movement-pizza-guys-every-on-delivery-app.jpg">
+    </p>
+
+    <p id="options">
+        <!-- <label value="start"></label> -->
+        <button id="start" onclick = "moveMeme()">Start</button>
+        <!-- <label value="stop"></label> -->
+        <button id="stop" disabled onclick = "stopMeme()">Stop</button>
+ 
     </p>
     <!-- footer bottom of the page author and contact -->
     <footer><img id = "KMK" src="KMK.png"></footer>
