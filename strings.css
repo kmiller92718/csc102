@@ -31,3 +31,13 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: dodgerblue;    
 }
+
+form {
+    /* used to align text to the left */
+    text-align: left;
+    /* moves text 100px in from the left */
+    margin-left: 25px;
+    /* sets font to Lucida Sans */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: dodgerblue;  
+}

@@ -1,5 +1,4 @@
 
-
 //after submit buuton has been clicked the disable is removed from the radio buttons yes and no 
 function removeDisabled(){
     yes.removeAttribute("disabled")
@@ -15,7 +14,7 @@ function check(){
     let reversed = "";
     if  (userWord.length < 2){
         document.getElementById("nextWord").innerHTML = "You did not enter a valid word."
-        //return;
+        
     }else{
     
 //rewrites the entered word reversed
@@ -26,9 +25,12 @@ function check(){
     }
 //checks is the entered word is the same as the reversed word and displays wheather it is a palindrome or not in <p id = demo>
     if (userWord == reversed){
+        
        document.getElementById("result").innerHTML = "Your Word is a Palindromes!"
+       
     }else{
         document.getElementById("result").innerHTML = "Your Word is not a Palindromes."
+        
     }
 //After the submit button has been click the following is displayed
     do {
@@ -45,9 +47,9 @@ function quit(){
 function tryAgain(){
     document.getElementById("nextWord").innerHTML = "Enter New Word"
 }
-
+// function validates that all infor entered is entered in the correct format
 function userInfoVerify(){
-
+        
     let firstNameField = document.getElementById("firstName");
 
     let lastNameField = document.getElementById("lastName");
@@ -63,7 +65,7 @@ function userInfoVerify(){
     let results = document.getElementById("userInfoResults");
 
     results.innerHTML = "";
-
+//replace(/[^0-9]/g, "") returns only number characters
     let zipNumber = zipCodeValue.replace(/[^0-9]/g, "");
 
     let fullName = firstNameValue + " " + lastNameValue;
@@ -73,19 +75,19 @@ function userInfoVerify(){
     console.log(zipCodeValue);
 
     console.log(zipNumber);
-
+//makes sure that the full name is not greater than 20 characters
     if (fullName.length > 20) {
         results.innerHTML = "Entered to many Characters."
 
         return;
     }
     
-
+//makes sure that the zip code entered is 5 characters long
     if (zipCodeValue.length !== 5){
         results.innerHTML = "Invalid Zip Code!"
         return;
     }
-
+//checks to make sure only numbers are entered and is 5 characters long
     if (zipNumber.length !== 5){
         results.innerHTML = "Invalid Zip Code!"
 
@@ -96,7 +98,14 @@ function userInfoVerify(){
 
     console.log("Input Validated!");
 }
+//plays audio when check user info button is clicked
+function play(){
+    let x = document.getElementById("myAudio");
 
+    x.play();
+
+
+}
 
 
 

@@ -1,4 +1,4 @@
-<!-- Keith Miller 12 Apr 2025 -->
+<!-- Keith Miller 26 Apr 2025 -->
  <!-- DOCTYPE this is the first tag on yhe page and it tells the browser that it is an HTML5 page -->
 <!DOCTYPE html>
 <!-- the HTML tag goes next -->
@@ -10,7 +10,12 @@
     <link rel = "stylesheet" href = "strings.css">
     <!-- links the js file -->
     <script src="string.js"></script>
-    <!-- Title tage is displayed on the tab of the window -->
+
+    <audio id="myAudio">
+         <source src="you-win-sequence-2-183949.mp3" type="audio/mpeg"> 
+    </audio>
+
+    <!-- Title tage is displayed on the tab of the window -->   
     <title>Palindromes Checker</title>
 </head>
 <body>
@@ -39,13 +44,14 @@
     <!-- Asking user if they want to try another word or not -->
     <p id = "question"></p>
 
+        <p>
             <!-- creates the otptions of yes or no -->
             <input id="yes" type = "radio" disabled onclick="tryAgain()" value="yes">
             <label for="yes">Yes</label>
             <br>
             <input id="no" type ="radio" disabled onclick="quit()" value="no">
             <label for="no">No</label>                       
-       
+        </p>   
     </p>
 
    <p id="userVerification"> 
@@ -64,10 +70,17 @@
         <input id = "zipCode" type = "text">
         <br>
         <br>
-        <button onclick="userInfoVerify();">Check User Info</button>
+        <button onclick="userInfoVerify(), play();">Check User Info</button>
     </p>
 
     <p id="userInfoResults"></p>
+
+    <!-- <p>  
+        <audio controls autoplay>
+            <source src="you-win-sequence-2-183949.mp3" type="audio/mpeg"> 
+        </audio>
+    
+    </p>-->
    
    
 </body>
