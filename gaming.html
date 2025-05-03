@@ -1,4 +1,4 @@
-<!--Keith Miller, 10 Apr 2025--> 
+<!--Keith Millrt, 1 Apr 2025--> 
 <!-- DOCTYPE this is the first tag on yhe page and it tells the browser that it is an HTML5 page -->
 <!DOCTYPE html>
 <!-- the HTML tag goes next -->
@@ -17,14 +17,71 @@
        <h1>
         LowHigh       
        </h1>
-
-       <!-- Creates the button that calls the JS to run in code.js -->
-       <button type="button" onclick="lowHigh()"> Play</button>
-      <script src="code.js"></script>
-             
+       <nav>
+        <h2>Menu<br>
+            <a href="./index.html">Home</a><br>
+            <a href="./boards.html">Objectives</a><br>
+            <a href="./strings.html">Palindrome</a><br>
+            Gaming<br>
+                       
+        </h2>
+    </nav>
+                   
     </header>
+    <table style="width:400px">
+        <tr>
+            <th colspan="2">Computer</th>
+            
+            <th colspan="2">Player</th>
+        </tr>
+        <tr>
+            <td>Die 1</td>
+            <td>Die 2</td>
+                    
+            <td>Die 1</td>
+            <td>Die 2</td>
+            
+        </tr>
+        <tr>
+            <td id="die1"></td>
+            <td id="die3"></td>
+            
+            <td id="die2"></td>
+            <td id="die4"></td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">Total</td>
+            <td colspan="2">Total</td>
+        </tr>
+        <tr>
+            <td id="compTotal" colspan="2"></td>
+            <td id="playerTotal" colspan="2"></td>
+        </tr>
+    </table>
+     <!-- Creates the button that calls the JS to run in code.js -->
+     <button type="button" onclick="lowHigh()"> Play</button>
+     <script src="code.js"></script>
+     
     <!-- paragrah id that the results of the game are displayed -->
     <p id = "game"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+      <!-- footer bottom of the page author and contact -->
+      <footer>
+        Keith Miller<br>
+        University of Advancing Technology<br>
+        2625 West Baseline Rd<br>
+        Tempe, AZ 85283
+    </footer>
     
 </body>
 </html>

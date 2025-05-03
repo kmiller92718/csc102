@@ -8,27 +8,26 @@ body{
     border-width: thick;
     border-color: crimson;  
     height: 1000px;
+    
 }
 
  nav{
     /* lays out the way the Nav area will look when created */
-    /* height: 600px; */
-    /* width: 200px; */
-    /* float: left; */
-    /* padding: 5px; */
-    /* line-height: 30px; */
-}
+    height: 600px; 
+    width: 200px; 
+    float: left; 
+    padding: 5px; 
+    line-height: 30px;
+    }
 
 footer{
     /* aligns the img in this case to the center */
     text-align: center;
-    /* moves the footer block 500px from the left edge */
-    margin-left: 500px;
-    /* sets footer block height to 30px and the width to 150px */
-    height: 30px;
-    width: 150px;
+    /* centers the footer to the page */
+    align-self: center;
     /* footer background color */
     background-color: rgb(47, 46, 46);
+    color:darkgreen;
    
 }
 
@@ -59,7 +58,7 @@ p{
     /* moves text 100px in from the left */
     margin-left: 100px; 
     /* sets font to Lucida Sans */
-    font-family: 'Lucida Sans';  
+    /* font-family: 'Lucida Sans';   */
 }
 
 
@@ -71,6 +70,38 @@ p{
     /* centers img in the footer block */
     align-content: center;
 }
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-style: italic;
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+td{
+    text-align: center;
+}
+
+#playerTotal{
+    color: red;
+}
+
+#compTotal{
+    color: red;
+}
+
+#game{
+    
+    color: blue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
 
 
 

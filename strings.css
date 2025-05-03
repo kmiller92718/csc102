@@ -29,7 +29,7 @@ p{
     margin-left: 25px;
     /* sets font to Lucida Sans */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: dodgerblue;    
+    
 }
 
 form {
@@ -39,5 +39,36 @@ form {
     margin-left: 25px;
     /* sets font to Lucida Sans */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: dodgerblue;  
+     
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+nav{
+    /* lays out the way the Nav area will look when created */
+    height: 600px; 
+    width: 200px; 
+    float: left; 
+    padding: 5px; 
+    line-height: 30px;
+    }
+
+footer{
+    /* aligns the img in this case to the center */
+    text-align: center;
+    /* centers the footer to the page */
+    align-self: center;
+    /* footer background color */
+    background-color: rgb(47, 46, 46);
+    color:darkgreen;
+   
 }
